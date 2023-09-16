@@ -1,0 +1,65 @@
+<!-- Smit Padshala -->
+<!-- 21BCP187 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smit Padshala Web Page</title>
+    <style>
+        a:link {
+            color: green; /* Default link color */
+            text-decoration: none; /* Remove underlines */
+        }
+
+        a:visited {
+            color: blue; /* Visited link color */
+            text-decoration: none;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: red; /* Hover and active link color */
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        frame[name="topFrame"], frame[name="leftFrame"], frame[name="bottomFrame"] {
+            background-color: rgba(179, 179, 179, 0.671);
+            color: white;
+        }
+
+        frame[name="mainFrame"] {
+            background-color: #f0f0f0;
+        }
+
+        frame[name="rightFrame"] {
+            background-color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<frameset rows="12%, 76%, 12%">
+    <!-- Top Frame -->
+    <frame name="topFrame" src="./top.html" scrolling="no" frameborder="0" noresize>
+    
+    <!-- Middle Frameset -->
+    <frameset cols="20%, 60%, 20%">
+        <!-- Left Frame (Navigation) -->
+        <frame name="leftFrame" src="./navigation.html" frameborder="0" noresize>
+        
+        <!-- Middle Frame (Content) -->
+        <frame name="mainFrame" src="./default.html" frameborder="0" noresize>
+        
+        <!-- Right Frame (Images) -->
+        <frame name="rightFrame" src="./images.html" frameborder="0" noresize>
+    </frameset>
+    
+    <!-- Bottom Frame -->
+    <frame name="bottomFrame" src="./contact.html" scrolling="no" frameborder="0" noresize>
+</frameset>
+</html>
