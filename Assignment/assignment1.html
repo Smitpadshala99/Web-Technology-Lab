@@ -1,0 +1,115 @@
+<!-- Smit Padshala -->
+<!-- 21BCP187 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple New Products</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            margin: 2px;
+        }
+        h2 {
+            margin: 2px;
+            text-align: center;
+        }
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 5px;
+            margin-top: 2px;
+        }
+        .product {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            width: calc(30% - 20px); 
+        }
+        .product img {
+            max-width: 100%;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Apple new Products</h1>
+    </header>
+
+    <div class="product-container">
+        <div class="product">
+            <h2>iPhone 15</h2>
+            <center><a href="#product1-details">View Details</a></center>
+            <img src="./products/iphone_15.jpg" alt="iPhone 15 Image">
+        </div>
+
+        <div class="product">
+            <h2>iPhone 15 Plus</h2>
+            <center><a href="#product2-details">View Details</a></center>
+            <img src="./products/iphone_15_plus.webp" alt="iPhone 15 Plus Image">
+        </div>
+        
+        <div class="product">
+            <h2>iPhone 15 Pro</h2>
+            <center><a href="#product3-details">View Details</a></center>
+            <img src="./products/iphone_15_pro.jpg" alt="iPhone 15 Pro Image">
+        </div>
+    </div>
+
+    <div id="product-details-container" class="product-container">
+        <div id="product1-details" class="product">
+            <h2>iPhone 15 Details</h2>
+            <ul>
+                <li>Display Size: 6.1 inches</li>
+                <li>Display Type: Super Retina XDR OLED</li>
+                <li>Memory (RAM): 6GB</li>
+                <li>Memory (ROM): 128GB</li>
+                <li>Price: ₹79,900</li>
+                <li>Discount: 5%</li>
+            </ul>
+        </div>
+
+        <div id="product2-details" class="product">
+            <h2>iPhone 15 Plus Details</h2>
+            <ul>
+                <li>Display Size: 6.7 inches</li>
+                <li>Display Type: Super Retina XDR OLED</li>
+                <li>Memory (RAM): 6GB</li>
+                <li>Memory (ROM): 128GB</li>
+                <li>Price: ₹89,900</li>
+                <li>Discount: 5%</li>
+            </ul>
+        </div>
+        
+        <div id="product3-details" class="product">
+            <h2>iPhone 15 Pro Details</h2>
+            <ul>
+                <li>Display Size: 6.1 inches</li>
+                <li>Display Type: LTPO Super Retina XDR OLED</li>
+                <li>Memory (RAM): 8GB</li>
+                <li>Memory (ROM): 128GB</li>
+                <li>Price: ₹1,34,900</li>
+                <li>Discount: 7%</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
