@@ -1,0 +1,20 @@
+h1 {
+    font-style: normal;
+    color: yellow;
+    font-size: 120%;
+}
+
+/* Paragraph style */
+.arial {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: yellow;
+    margin-left: 3cm;
+}
+
+/* Background image */
+body {
+    background-image: url("hello.jpeg");
+    background-repeat: repeat-y;
+    background-size: auto 250%;
+}

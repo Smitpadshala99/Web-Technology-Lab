@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --button-color: blue;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: white; /* Initial background color */
+            color: var(--button-color); /* Blue color */
+            text-decoration: none;
+            border: 2px solid var(--button-color); /* Blue border */
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: var(--button-color); /* Hover background color */
+            color: white; /* Hover text color */
+            border: 2px solid transparent; /* Border disappears on hover */
+            transition: background-color 0.9s, color 0.9s; /* Transition properties */
+        }
+    </style>
+</head>
+<body>
+    <a href="#" class="button">Hover Me</a>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!-- 21BCP187 -->
+<!-- Smit Padshala -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Form</title>
+    <style>
+      .login-form {
+        width: 300px;
+        margin: 5px auto;
+      }
+
+      .login-form label {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      .login-form input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .login-form button {
+        width: 100%;
+        padding: 10px;
+        background-color: blue;
+        color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin: 5px;
+      }
+
+      .login-form input:hover,
+      .login-form button:hover {
+        transform: scale(1.2);
+        transition: transform 4s ease;
+      }
+
+      .login-form input:hover,
+      .login-form button:hover {
+        animation: delay 2s;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" class="login-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username"/>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password"/>
+        <br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>

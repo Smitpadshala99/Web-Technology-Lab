@@ -1,0 +1,28 @@
+/* Basic styles */
+h1, h2, p, table, pre {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+/* Pseudo-classes */
+h1:hover {
+    background-color: yellow;
+}
+
+h2:hover {
+    background-color: blue;
+}
+
+p:hover {
+    font-size: 20px;
+}
+
+table:hover {
+    background-color: lightgray;
+}
+
+pre::selection {
+    background-color: yellow;
+    color: red;
+}

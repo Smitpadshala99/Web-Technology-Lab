@@ -1,0 +1,38 @@
+<!-- 21BCP187 -->
+<!-- Smit Padshala -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .advertisement {
+            font-size: 48px;
+            color: red;
+            white-space: nowrap; /* Prevent text from wrapping to the next line */
+            position: relative;
+            animation: moveText 10s linear infinite; /* 10s duration for the animation */
+            animation-delay: 1s; /* Start animation 1 second after page load */
+        }
+
+        @keyframes moveText {
+            0% {
+                left: -100%;
+            }
+            50% {
+                left: 100%;
+            }
+            75% {
+                left: 100%; 
+            }
+            100% {
+                left: -100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p class="advertisement">Smit Padshala</p>
+</body>
+</html>

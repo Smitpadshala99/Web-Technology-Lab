@@ -1,0 +1,35 @@
+.username, .password {
+    padding: 5px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+}
+
+.username:hover {
+    background-color: yellow;
+}
+
+.password:hover {
+    background-color: pink;
+}
+
+.input-field:checked + label {
+    color: red;
+}
+
+.button-container {
+    margin-top: 10px;
+}
+
+.button {
+    background-color: transparent;
+    border: 1px solid blue;
+    color: blue;
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: white;
+    background-color: blue;
+}

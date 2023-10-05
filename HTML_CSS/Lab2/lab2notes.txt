@@ -1,0 +1,26 @@
+Formating Tags
+<b> --> <strong>
+<i> --> <em>
+<u>  underline
+<mark> yellow highlight
+<ins> 
+<del>
+<tt> typewriter text
+<sub> subscript  --> x<sub>1
+<sup> superscript --> x<sup>2
+
+
+HTML Table
+<table>   ---> border, align, cellspacing, cellpadding, bgcolor, width
+border is complsary
+<caption>
+<thead>
+<th>
+<td>
+<tr>  ---> rowspan, colspan
+<tbody>
+<tfoot>
+
+
+
+Search Engine Optimization (SEO):
