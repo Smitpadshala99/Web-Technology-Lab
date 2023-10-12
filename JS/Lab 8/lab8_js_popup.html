@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop Up</title>
+    <script>
+        function a(){
+            alert("This is an alert message box.");  
+            alert(Date()); 
+        }
+
+        function save(){
+            var userPreference;
+           if (confirm("Do you want to save changes?") == true) {
+           userPreference = "Data saved successfully!";
+           } else {
+           userPreference = "Save Canceled!";
+           }
+           document.getElementById("c").innerHTML = userPreference;
+        }
+
+        function myinput(){
+            var name = prompt("Enter Your Name:");
+            
+            if (name == null || name == "") {
+            document.getElementById("p").innerHTML = "You did not enterd anything. Please enter your name again";
+            }
+            else
+            {
+            document.getElementById("p").innerHTML = name
+            }
+        }
+        
+        function d(){
+            document.getElementById("p1").innerHTML = Date();
+            var currentDate = new Date();
+            document.getElementById("p2").innerHTML = currentDate;
+        }
+    </script>
+
+    <script type="text/javascript"
+        language="javascript">var d1 = new Date();
+        document.write(d1+"<br>");
+        document.write(d1.getDay()+"<br>");
+        document.write(d1.getMonth()+"<br>");
+        document.write(d1.getDate()+"<br>");
+        document.write(d1.getFullYear()+"<br>");
+        document.write(d1.getHours()+"<br>");
+        document.write(d1.getMinutes()+"<br>");
+        document.write(d1.getSeconds()+"<br>");
+    </script>
+
+    <script>
+        let a = new Date();
+        const nodeList = document.querySelectorAll('span');
+        // console.log(nodeList);  
+        nodeList.forEach((item) => {
+
+            switch (item.className) {
+                case "curr_time":
+                    return item.innerText = a.getTime() / 1000;
+                case "curr_day":
+                    return item.innerText = a.getDay();
+                case "curr_date":
+                    return item.innerText = a.getDate();
+                case "curr_year":
+                    return item.innerText = a.getFullYear();
+                case "curr_minutes":
+                    return item.innerText = a.getMinutes();
+                case "curr_month":
+                    return item.innerText = a.getMonth();
+            }
+        })
+
+    </script>
+
+</head>
+<body>
+    <!-- alert() -->
+    <h4>Demo: alert()</h4>
+    <button onclick="a()">Display Messages</button>
+
+    <!-- Confirm()  -->
+    <h4>Demo: confirm() </h4>
+    <button onclick="save()">Save Data</button>
+    <p id="c"></p>
+
+    <!-- Prompt() -->
+    <h4>Demo: prompt()</h4>
+    <button onclick="myinput()">Click to enter your name</button>
+    <p id="p"></p>
+
+
+    <h4>Demo: Current Date</h4>
+    <button onclick="d()">Date</button>
+    <p id="p1"></p>
+    <p id="p2"></p>
+
+    <h4>Demo: Date</h4>
+    <span class="curr_time"></span><br>
+    <span class="curr_date"></span><br>
+    <span class="curr_day"></span><br>
+    <span class="curr_year"></span><br>
+    <span class="curr_minutes"></span><br>
+    <span class="curr_month"></span><br>
+</body>
+</html>

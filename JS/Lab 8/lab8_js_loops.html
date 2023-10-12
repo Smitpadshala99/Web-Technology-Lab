@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Loops</title>
+    <script>
+        function loop(){
+            j=0;
+            for(i=0; i<5; i++){
+                document.write("For Loop");
+                document.write(i,"\n <br>")
+            }
+            while(j<5){
+                document.write("While Loop");
+                document.write(j,"\n <br>")
+                j++;
+            }
+            if(6%2==0){
+                document.write("IF ELSE LOOP <br>");
+                document.write("if");
+            }else{
+                document.write("else");
+            }
+            do{
+                document.write("Do");
+            }while(j==0){
+                document.write("While");
+                j=0;
+            }
+        }
+        
+    </script>
+</head>
+<body>
+    <input type="button" name="loop" id="loop" onclick="loop()" value="Loop">
+</body>
+</html>
